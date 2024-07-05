@@ -1,0 +1,17 @@
+---
+interface Props {
+    lname1: string,
+    lname2: string,
+    lname3: string,
+    lname4: string,
+    lname5: string
+}
+const {lname1, lname2, lname3 ,lname4, lname5} = Astro.props;
+---
+<ul class="list-none w-full flex  flex-col gap-3">
+    <li class="bg-cdark py-3 rounded-lg text-center text-xs font-semibold">{lname1}</li>
+    <li class="bg-cdark p-3 rounded-lg text-center text-xs font-semibold">{lname2}</li>
+    <li class="bg-cdark p-3 rounded-lg text-center text-xs font-semibold">{lname3}</li>
+    <li class="bg-cdark p-3 rounded-lg text-center text-xs font-semibold">{lname4}</li>
+    <li class="bg-cdark p-3 rounded-lg text-center text-xs font-semibold">{lname5}</li>
+</ul>

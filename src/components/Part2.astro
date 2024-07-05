@@ -1,0 +1,11 @@
+---
+interface Props {
+    name: string;
+    place: string
+}
+const {name, place} = Astro.props;
+---
+<article class="text-center">
+    <h1 class="font-semibold text-xl">{name}</h1>
+    <h2 class="text-xs text-cgreen font-semibold">{place}</h2>
+</article>
